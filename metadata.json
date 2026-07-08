@@ -1,0 +1,6 @@
+{
+  "name": "AWS Exam Practice Assistant",
+  "description": "An AI-powered prep suite for AWS CLF-C02 (Cloud Practitioner) & AIF-C01 (AI Practitioner) exams. Features dynamic scenario generation with multi-model fallbacks, interactive mock exams, flashcards hub, concept challenges, streak trackers, and custom study notes.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
