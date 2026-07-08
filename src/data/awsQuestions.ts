@@ -338,6 +338,7 @@ export const PREBUILT_QUESTIONS: AWSQuestion[] = [
 ];
 
 export const PREBUILT_FLASHCARDS: Flashcard[] = [
+  // === CLF-C02 FLASHCARDS ===
   {
     id: 'fc_clf_1',
     examType: 'CLF-C02',
@@ -403,6 +404,168 @@ export const PREBUILT_FLASHCARDS: Flashcard[] = [
     explanation: 'Tracks AWS costs or usage and alerts you when your actual or forecasted spend exceeds custom thresholds. Supports SNS notifications or email.'
   },
   {
+    id: 'fc_clf_9',
+    examType: 'CLF-C02',
+    domainId: 'CLF_D3',
+    term: 'Amazon CloudFront',
+    definition: 'Global content delivery network (CDN) cache service.',
+    explanation: 'Caches static, dynamic, and streaming web content at global Edge Locations. Drastically reduces latency for end-users and integrates with AWS Shield/WAF.'
+  },
+  {
+    id: 'fc_clf_10',
+    examType: 'CLF-C02',
+    domainId: 'CLF_D3',
+    term: 'Amazon Route 53',
+    definition: 'Scalable cloud Domain Name System (DNS) service.',
+    explanation: 'A highly available DNS web service that routes end-users to cloud applications. Handles domain name registration, health checks, and active-passive failover routing.'
+  },
+  {
+    id: 'fc_clf_11',
+    examType: 'CLF-C02',
+    domainId: 'CLF_D2',
+    term: 'AWS WAF',
+    definition: 'Web Application Firewall shielding against web exploits.',
+    explanation: 'Monitors HTTP/HTTPS requests forwarded to API Gateway, CloudFront, or ALBs. Blocks malicious IP addresses, cross-site scripting (XSS), and SQL injection exploits.'
+  },
+  {
+    id: 'fc_clf_12',
+    examType: 'CLF-C02',
+    domainId: 'CLF_D2',
+    term: 'AWS Artifact',
+    definition: 'Central portal for on-demand AWS compliance reports.',
+    explanation: 'Provides direct access to security, global compliance documentation, and independent auditor reports (e.g., ISO, PCI, SOC 1/2/3) to verify AWS hardware standards.'
+  },
+  {
+    id: 'fc_clf_13',
+    examType: 'CLF-C02',
+    domainId: 'CLF_D4',
+    term: 'AWS Trusted Advisor',
+    definition: 'Automated advisor for infrastructure optimization checks.',
+    explanation: 'Evaluates your environment and provides optimization guidance across 5 areas: Cost Optimization, Security, Fault Tolerance, Performance, and Service Limits.'
+  },
+  {
+    id: 'fc_clf_14',
+    examType: 'CLF-C02',
+    domainId: 'CLF_D3',
+    term: 'Amazon RDS',
+    definition: 'Managed relational database engine orchestrator.',
+    explanation: 'Simplifies setup, scaling, patching, and backups for relational databases (PostgreSQL, MySQL, MariaDB, Oracle, SQL Server). Supports Multi-AZ replication.'
+  },
+  {
+    id: 'fc_clf_15',
+    examType: 'CLF-C02',
+    domainId: 'CLF_D3',
+    term: 'Amazon DynamoDB',
+    definition: 'Serverless, single-digit millisecond latency NoSQL database.',
+    explanation: 'A fully managed key-value and document database service. Provides predictable, auto-scaling performance, globally replicated tables, and sub-10ms queries.'
+  },
+  {
+    id: 'fc_clf_16',
+    examType: 'CLF-C02',
+    domainId: 'CLF_D1',
+    term: 'AWS Well-Architected Framework',
+    definition: 'Architectural blueprints across 6 core design pillars.',
+    explanation: 'Helps cloud architects design secure, high-performing, resilient, and efficient infrastructures. The pillars are: Operational Excellence, Security, Reliability, Performance Efficiency, Cost Optimization, and Sustainability.'
+  },
+  {
+    id: 'fc_clf_17',
+    examType: 'CLF-C02',
+    domainId: 'CLF_D1',
+    term: 'AWS CAF (Cloud Adoption Framework)',
+    definition: 'Actionable blueprints for enterprise cloud migration planning.',
+    explanation: 'Organizes guidance into 6 primary Perspectives: Business, People, Governance, Platform, Security, and Operations. Helps transform legacy operating models.'
+  },
+  {
+    id: 'fc_clf_18',
+    examType: 'CLF-C02',
+    domainId: 'CLF_D4',
+    term: 'AWS Organizations',
+    definition: 'Centralized management for multiple AWS accounts.',
+    explanation: 'Enables consolidated billing, unified policy control (using Service Control Policies/SCPs), and hierarchical division of accounts into Organizational Units (OUs).'
+  },
+  {
+    id: 'fc_clf_19',
+    examType: 'CLF-C02',
+    domainId: 'CLF_D4',
+    term: 'AWS Cost Explorer',
+    definition: 'Visual analysis tool for cost trends and forecasting.',
+    explanation: 'Enables you to graph, filter, and drill down into your historical and forecasted AWS costs. Helps identify idle resources and reservation purchase suggestions.'
+  },
+  {
+    id: 'fc_clf_20',
+    examType: 'CLF-C02',
+    domainId: 'CLF_D3',
+    term: 'Amazon EBS',
+    definition: 'High-performance block storage volumes for EC2 instances.',
+    explanation: 'Provides persistent virtual hard disk volumes designed for read/write intensive databases and filesystems. Persists separate from instance termination.'
+  },
+  {
+    id: 'fc_clf_21',
+    examType: 'CLF-C02',
+    domainId: 'CLF_D3',
+    term: 'Amazon EFS',
+    definition: 'Serverless, fully managed shared elastic file systems.',
+    explanation: 'Provides a simple shared file interface using standard NFSv4. Automatically scales up to petabytes and supports simultaneous concurrent mounting on thousands of EC2 instances.'
+  },
+  {
+    id: 'fc_clf_22',
+    examType: 'CLF-C02',
+    domainId: 'CLF_D3',
+    term: 'Elastic Load Balancing (ELB)',
+    definition: 'Automated incoming traffic distribution across multiple targets.',
+    explanation: 'Distributes application traffic across EC2, ECS, or IP targets in multiple AZs. Supports Application (L7), Network (L4), and Gateway load balancers.'
+  },
+  {
+    id: 'fc_clf_23',
+    examType: 'CLF-C02',
+    domainId: 'CLF_D2',
+    term: 'AWS Secrets Manager',
+    definition: 'Secure management, rotation, and retrieval of credentials.',
+    explanation: 'Enables rotation, management, and programmatic retrieval of database credentials, API keys, and sensitive tokens, completely replacing dangerous hardcoded code secrets.'
+  },
+  {
+    id: 'fc_clf_24',
+    examType: 'CLF-C02',
+    domainId: 'CLF_D3',
+    term: 'AWS Systems Manager',
+    definition: 'Operational hub for automated multi-resource configuration.',
+    explanation: 'Enables automated patch compliance, remote terminal commands execution (Session Manager) without SSH keys, parameter storage, and fleet inventory management.'
+  },
+  {
+    id: 'fc_clf_25',
+    examType: 'CLF-C02',
+    domainId: 'CLF_D2',
+    term: 'AWS CloudTrail',
+    definition: 'Continuous audit logger for AWS API call activities.',
+    explanation: 'Records API actions, user logins, and administrative changes across your AWS accounts. Key for governance, security analytics, and compliance audits.'
+  },
+  {
+    id: 'fc_clf_26',
+    examType: 'CLF-C02',
+    domainId: 'CLF_D3',
+    term: 'Amazon CloudWatch',
+    definition: 'Real-time infrastructure and application metric monitor.',
+    explanation: 'Tracks performance metrics (CPU, RAM, network), aggregates diagnostic logs, and fires alarms/actions if thresholds are breached.'
+  },
+  {
+    id: 'fc_clf_27',
+    examType: 'CLF-C02',
+    domainId: 'CLF_D4',
+    term: 'AWS Health Dashboard',
+    definition: 'Status center for localized AWS service disruptions.',
+    explanation: 'Provides alerts and remediation guidance specifically tailored to events affecting your active resource footprint. Differs from the public global status board.'
+  },
+  {
+    id: 'fc_clf_28',
+    examType: 'CLF-C02',
+    domainId: 'CLF_D3',
+    term: 'Amazon Athena',
+    definition: 'Serverless interactive standard SQL analytics for S3.',
+    explanation: 'Enables quick SQL queries directly on unstructured flat files stored in S3 buckets. Billed purely per terabyte scanned, with no servers to manage.'
+  },
+
+  // === AIF-C01 FLASHCARDS ===
+  {
     id: 'fc_aif_1',
     examType: 'AIF-C01',
     domainId: 'AIF_D1',
@@ -465,5 +628,165 @@ export const PREBUILT_FLASHCARDS: Flashcard[] = [
     term: 'Prompt Engineering',
     definition: 'Structuring textual inputs to optimize LLM outputs.',
     explanation: 'Crafting instructions, context, examples (few-shot), and output specifications to guide Foundation Models to yield highly accurate and formatted responses.'
+  },
+  {
+    id: 'fc_aif_9',
+    examType: 'AIF-C01',
+    domainId: 'AIF_D2',
+    term: 'AWS Inferentia',
+    definition: 'Custom AWS silicon chip optimized for low-cost ML inference.',
+    explanation: 'AWS-designed accelerator specialized for ultra-low latency, low-cost machine learning models running on EC2. Compels superior throughput-per-watt than generic GPUs.'
+  },
+  {
+    id: 'fc_aif_10',
+    examType: 'AIF-C01',
+    domainId: 'AIF_D2',
+    term: 'Amazon Rekognition',
+    definition: 'Fully managed computer vision and image/video analyzer.',
+    explanation: 'Automates media file reviews for custom labels, face analysis, text, sentiment, unsafe contents, and object categorization using high-performance pre-trained AI engines.'
+  },
+  {
+    id: 'fc_aif_11',
+    examType: 'AIF-C01',
+    domainId: 'AIF_D2',
+    term: 'Amazon Polly',
+    definition: 'Text-to-speech service producing natural human voice streams.',
+    explanation: 'Translates textual formats into real-time audio streams. Employs advanced neural networks to capture vocal inflections across dozens of global accents.'
+  },
+  {
+    id: 'fc_aif_12',
+    examType: 'AIF-C01',
+    domainId: 'AIF_D2',
+    term: 'Amazon Lex',
+    definition: 'Fully managed NLP service for chatbot development.',
+    explanation: 'Utilizes high-quality Automatic Speech Recognition (ASR) and Natural Language Understanding (NLU) technologies to build highly interactive voice and text dialogue bots.'
+  },
+  {
+    id: 'fc_aif_13',
+    examType: 'AIF-C01',
+    domainId: 'AIF_D2',
+    term: 'Amazon Comprehend',
+    definition: 'Natural Language Processing sentiment and insight analyzer.',
+    explanation: 'Examines documents to identify topics, key entities, overall sentiment, linguistic syntax, and personally identifiable information (PII) using out-of-the-box machine learning.'
+  },
+  {
+    id: 'fc_aif_14',
+    examType: 'AIF-C01',
+    domainId: 'AIF_D2',
+    term: 'Amazon Bedrock Agents',
+    definition: 'Orchestrator enabling LLMs to run multi-step actions.',
+    explanation: 'Enables foundation models to safely complete multi-stage operational pipelines, call external developer-defined APIs, and query database context to complete requests.'
+  },
+  {
+    id: 'fc_aif_15',
+    examType: 'AIF-C01',
+    domainId: 'AIF_D1',
+    term: 'Fine-Tuning',
+    definition: 'Supervised learning to modify model weights using domain datasets.',
+    explanation: 'A training method where an existing pre-trained foundation model is further trained on a specialized, labeled dataset. This adapts the model weights for custom business domains.'
+  },
+  {
+    id: 'fc_aif_16',
+    examType: 'AIF-C01',
+    domainId: 'AIF_D1',
+    term: 'Pre-training',
+    definition: 'Initial training of base models on massive unlabeled datasets.',
+    explanation: 'The initial stage where a model learns fundamental language, syntax, and global context by processing vast pools of public, unlabeled datasets on high-performance accelerators.'
+  },
+  {
+    id: 'fc_aif_17',
+    examType: 'AIF-C01',
+    domainId: 'AIF_D3',
+    term: 'Model Hallucination',
+    definition: 'When models generate incorrect or ungrounded facts confidently.',
+    explanation: 'Occurs when an LLM outputs syntactically correct sentences that are factually false or not backed by the input reference documentation. Remedied by RAG or system prompting.'
+  },
+  {
+    id: 'fc_aif_18',
+    examType: 'AIF-C01',
+    domainId: 'AIF_D3',
+    term: 'SageMaker Model Cards',
+    definition: 'Standardized documentation framework for AI/ML governance.',
+    explanation: 'Provides a single truth repository capturing model training details, risk profiles, hyperparameter specifications, bias audits, and performance tracking for audits.'
+  },
+  {
+    id: 'fc_aif_19',
+    examType: 'AIF-C01',
+    domainId: 'AIF_D1',
+    term: 'RLHF (Reinforcement Learning from Human Feedback)',
+    definition: 'Aligning model outputs to human guidelines and safety.',
+    explanation: 'Refines foundation model behaviors by incorporating human ratings. Helps align the model outputs with core guidelines like helpfulness, honesty, and safety.'
+  },
+  {
+    id: 'fc_aif_20',
+    examType: 'AIF-C01',
+    domainId: 'AIF_D3',
+    term: 'Model Bias & Fairness',
+    definition: 'Unbalanced predictions caused by skewed training pools.',
+    explanation: 'Occurs when historical dataset skews or algorithm assumptions cause the model to make systematically worse predictions for particular demographic categories.'
+  },
+  {
+    id: 'fc_aif_21',
+    examType: 'AIF-C01',
+    domainId: 'AIF_D1',
+    term: 'Vector Embeddings',
+    definition: 'High-dimensional numeric lists capturing semantic definitions.',
+    explanation: 'Converts unstructured files (text, images, audio) into long mathematical arrays representing key concepts. This allows ultra-fast similarity lookups in vector engines.'
+  },
+  {
+    id: 'fc_aif_22',
+    examType: 'AIF-C01',
+    domainId: 'AIF_D1',
+    term: 'Temperature',
+    definition: 'LLM sampling hyperparameter tuning response randomness.',
+    explanation: 'Determines output diversity. Values close to 0 ensure predictable, deterministic wording, whereas values near 1.0 encourage creative, varied output.'
+  },
+  {
+    id: 'fc_aif_23',
+    examType: 'AIF-C01',
+    domainId: 'AIF_D1',
+    term: 'Top-K & Top-P',
+    definition: 'LLM generation limits filtering token selection subsets.',
+    explanation: 'Top-K locks choice selections to the K most probable tokens. Top-P (nucleus sampling) chooses from a dynamic cluster whose combined likelihood matches cumulative probability P.'
+  },
+  {
+    id: 'fc_aif_24',
+    examType: 'AIF-C01',
+    domainId: 'AIF_D2',
+    term: 'SageMaker Canvas',
+    definition: 'Visual, zero-code environment to build machine learning models.',
+    explanation: 'Enables analysts and business personnel to create custom predictions (tabular, timeseries, computer vision) and query LLMs without writing single lines of code.'
+  },
+  {
+    id: 'fc_aif_25',
+    examType: 'AIF-C01',
+    domainId: 'AIF_D2',
+    term: 'Amazon Bedrock Knowledge Bases',
+    definition: 'Fully managed ingestion workflow automating serverless RAG.',
+    explanation: 'Automates data chunking, calculates vector embeddings using Titan Embedding APIs, and uploads results into OpenSearch Serverless/Pinecone vector databases.'
+  },
+  {
+    id: 'fc_aif_26',
+    examType: 'AIF-C01',
+    domainId: 'AIF_D3',
+    term: 'Amazon Bedrock Model Evaluation',
+    definition: 'Quality assurance evaluations using automatic and human reviews.',
+    explanation: 'Assesses model output metrics (accuracy, toxicity, bias). Supports automatic evaluation sweeps or human review panels using custom workforce groups.'
+  },
+  {
+    id: 'fc_aif_27',
+    examType: 'AIF-C01',
+    domainId: 'AIF_D4',
+    term: 'Token-based Pricing',
+    definition: 'Billing model charged per processing inputs and outputs.',
+    explanation: 'Syllabus pricing model for serverless foundation requests on Bedrock. Charges users based on the number of processed input tokens and output tokens generated.'
+  },
+  {
+    id: 'fc_aif_28',
+    examType: 'AIF-C01',
+    domainId: 'AIF_D3',
+    term: 'AWS PrivateLink for Bedrock',
+    definition: 'Secure private network piping requests inside VPC bounds.',
+    explanation: 'Restricts Amazon Bedrock API requests to your AWS virtual network borders, keeping training data safe without sending packets over the public internet.'
   }
 ];

@@ -10,7 +10,8 @@ import {
   Server,
   ChevronRight,
   User,
-  ExternalLink
+  ExternalLink,
+  Compass
 } from 'lucide-react';
 
 import { AWSExamType, UserState, AWSQuestion, ExamAttempt, StudyNote } from './types';
@@ -20,6 +21,7 @@ import ExamSimulator from './components/ExamSimulator';
 import FlashcardsHub from './components/FlashcardsHub';
 import AICoach from './components/AICoach';
 import ReviewCenter from './components/ReviewCenter';
+import AdaptiveRoadmap from './components/AdaptiveRoadmap';
 
 const LOCAL_STORAGE_KEY = 'aws_exam_practice_state_v1';
 
@@ -140,6 +142,13 @@ export default function App() {
 
   const handleClearQuestionContext = () => {
     setActiveQuestionContext(null);
+  };
+
+  const handleSelectDomain = (domainId: string) => {
+    saveState({
+      ...userState,
+      selectedDomainId: domainId
+    });
   };
 
   // Consume credits for AI generated scenarios (freemium model simulation)
@@ -298,6 +307,22 @@ export default function App() {
           </button>
 
           <button
+            id="nav-tab-roadmap"
+            onClick={() => {
+              setActiveTab('roadmap');
+              handleClearQuestionContext();
+            }}
+            className={`flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-bold transition-all cursor-pointer ${
+              activeTab === 'roadmap'
+                ? 'bg-slate-900 text-white shadow-sm'
+                : 'text-slate-500 hover:text-slate-800 hover:bg-slate-100'
+            }`}
+          >
+            <Compass className="w-4 h-4" />
+            Study Roadmap & Gaps
+          </button>
+
+          <button
             id="nav-tab-practice"
             onClick={() => setActiveTab('practice')}
             className={`flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-bold transition-all cursor-pointer ${
@@ -389,6 +414,14 @@ export default function App() {
               onToggleDevMode={handleToggleDevMode}
               onRefillCredits={handleRefillCredits}
               onToggleSimulate503={handleToggleSimulate503}
+            />
+          )}
+
+          {activeTab === 'roadmap' && (
+            <AdaptiveRoadmap
+              userState={userState}
+              onNavigateToTab={setActiveTab}
+              onSelectDomain={handleSelectDomain}
             />
           )}
 
